@@ -87,7 +87,9 @@ export function ProjectsGridSection() {
                   </h3>
                 </div>
                 <a
-                  href="#"
+                  href={p.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-cursor-hover
                 >
@@ -112,14 +114,18 @@ export function ProjectsGridSection() {
 
               <div className="mt-6 flex gap-4">
                 <a
-                  href="#"
+                  href={p.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-cursor-hover
                 >
                   <ExternalLink className="w-4 h-4" /> Live
                 </a>
                 <a
-                  href="#"
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   data-cursor-hover
                 >

@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/contact-section";
 import { HeroSection } from "@/components/hero-section";
 import { AboutSection } from "@/components/about-section";
 import { ProjectsGridSection } from "@/components/projects-grid-section";
-import { CustomCursor } from "@/components/custom-cursor";
+
 import { TopStrip } from "@/components/top-strip";
 
 export default function PortfolioPage() {
@@ -21,9 +21,8 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <CustomCursor />
       <TopStrip />
-      <main className="bg-background h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory md:cursor-none">
+      <main className="bg-background h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory">
         <HeroSection />
         <AboutSection />
         <ProjectsGridSection />

@@ -42,7 +42,7 @@ const projects = [
 
 export function HorizontalScrollProjects() {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
@@ -72,21 +72,21 @@ export function HorizontalScrollProjects() {
         </div>
 
         {/* Horizontal scroll container */}
-        <motion.div 
-          style={{ x }} 
+        <motion.div
+          style={{ x }}
           className="flex gap-8 pl-6 md:pl-12 lg:pl-20"
         >
           {projects.map((project, index) => (
-            <ProjectCard 
-              key={project.id} 
-              project={project} 
+            <ProjectCard
+              key={project.id}
+              project={project}
               index={index}
               scrollProgress={scrollYProgress}
             />
           ))}
-          
+
           {/* End card - View all */}
-          <motion.div 
+          <motion.div
             className="flex-shrink-0 w-[300px] md:w-[400px] h-[400px] md:h-[500px] flex items-center justify-center"
           >
             <a
@@ -103,7 +103,7 @@ export function HorizontalScrollProjects() {
         {/* Progress indicator */}
         <div className="absolute bottom-12 left-6 md:left-12 lg:left-20 right-6 md:right-12 lg:right-20">
           <div className="h-[1px] bg-border">
-            <motion.div 
+            <motion.div
               className="h-full bg-primary origin-left"
               style={{ scaleX: scrollYProgress }}
             />
@@ -114,12 +114,12 @@ export function HorizontalScrollProjects() {
   );
 }
 
-function ProjectCard({ 
-  project, 
-  index, 
-  scrollProgress 
-}: { 
-  project: typeof projects[0]; 
+function ProjectCard({
+  project,
+  index,
+  scrollProgress
+}: {
+  project: typeof projects[0];
   index: number;
   scrollProgress: ReturnType<typeof useScroll>["scrollYProgress"];
 }) {
@@ -148,7 +148,7 @@ function ProjectCard({
       <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden bg-card/50 backdrop-blur-sm border border-border/50">
         {/* Gradient background */}
         <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-50`} />
-        
+
         {/* Content */}
         <div className="relative z-10 h-full p-6 md:p-8 flex flex-col">
           {/* Year badge */}
@@ -163,21 +163,21 @@ function ProjectCard({
 
           {/* Project info with parallax */}
           <div className="mt-auto">
-            <motion.p 
+            <motion.p
               style={{ y: descY }}
               className="text-sm text-primary mb-2"
             >
               {project.subtitle}
             </motion.p>
-            
-            <motion.h3 
+
+            <motion.h3
               style={{ y: titleY }}
               className="text-3xl md:text-4xl font-serif font-medium text-foreground mb-4"
             >
               {project.title}
             </motion.h3>
-            
-            <motion.p 
+
+            <motion.p
               style={{ y: descY }}
               className="text-sm text-muted-foreground mb-6 max-w-md"
             >
@@ -199,7 +199,9 @@ function ProjectCard({
             {/* Links */}
             <div className="flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <a
-                href="#"
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 data-cursor-hover
               >
@@ -207,7 +209,9 @@ function ProjectCard({
                 Live Demo
               </a>
               <a
-                href="#"
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 data-cursor-hover
               >
