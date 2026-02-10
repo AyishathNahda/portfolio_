@@ -42,6 +42,18 @@ const projects = [
     github: "https://github.com/AyishathNahda/Orchestra_UI-_An_AI_Generated_Component_Library",
     live: "https://orchestra-ui-an-ai-generated-compon.vercel.app/",
   },
+  {
+    id: 4,
+    title: "Weather-Alert",
+    subtitle: "Flood Early Warning System",
+    description:
+      "Developed a Next.js (App Router) application to fetch, process, and visualize real-time weather and rainfall data. Delivered server-side data fetching and API routes to aggregate meteorological data into flood-risk indicators. Focused on performance optimization and accessibility.",
+    tech: ["Next.js", "Tailwind CSS", "Vercel", "Open-Meteo"],
+    color: "from-sky-500/20 to-blue-500/20",
+    year: "2025",
+    github: "https://github.com/AyishathNahda/Weather_Alert",
+    live: "https://weather-alert-woad.vercel.app/",
+  },
 ];
 
 
@@ -70,6 +82,7 @@ export function ProjectsGridSection() {
               key={p.id}
               initial={{ opacity: 0, y: 18, scale: 0.98 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              whileHover={{ y: -10, scale: 1.02 }}
               viewport={{ once: true, margin: "-120px" }}
               transition={{
                 duration: 0.7,
@@ -77,7 +90,7 @@ export function ProjectsGridSection() {
                 ease: [0.16, 1, 0.3, 1],
                 scale: { type: "spring", stiffness: 260, damping: 22, mass: 0.9 },
               }}
-              className="rounded-3xl border border-border/70 bg-card/35 backdrop-blur p-7 hover:bg-card/55 hover:border-border transition-colors"
+              className="rounded-3xl border border-border/70 bg-card/35 backdrop-blur p-7 hover:bg-card/55 hover:border-border transition-all duration-300 hover:shadow-xl hover:shadow-primary/20"
             >
               <div className="flex items-start justify-between gap-6">
                 <div>
