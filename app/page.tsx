@@ -6,11 +6,13 @@ import { ContactSection } from "@/components/contact-section";
 import { HeroSection } from "@/components/hero-section";
 import { AboutSection } from "@/components/about-section";
 import { ProjectsGridSection } from "@/components/projects-grid-section";
+import { SkillsSection } from "@/components/skills-section";
 
 import { TechStackTicker } from "@/components/tech-stack-ticker";
 import { GradientBlob } from "@/components/gradient-blob";
 import { TopStrip } from "@/components/top-strip";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { CustomCursor } from "@/components/custom-cursor";
 
 export default function PortfolioPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +26,7 @@ export default function PortfolioPage() {
 
   return (
     <>
+      <CustomCursor />
       <TopStrip />
       <ThemeToggle />
       <main className="bg-background min-h-screen relative overflow-hidden">
@@ -31,6 +34,7 @@ export default function PortfolioPage() {
         <HeroSection />
         <AboutSection />
         <TechStackTicker />
+        <SkillsSection />
         <ProjectsGridSection />
         <ContactSection />
       </main>

@@ -10,8 +10,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 const _playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: 'Nahda| Portfolio',
-  description: 'full-stack developer crafting immersive digital experiences.',
+  title: 'Ayishath Nahda | Software Engineer & AI Developer',
+  description: 'Software engineer working across full-stack development, AI/ML, and data science. Building practical, intelligent, and user-focused digital products.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -42,8 +42,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          enableSystem
+          defaultTheme="light"
           disableTransitionOnChange
         >
           {children}

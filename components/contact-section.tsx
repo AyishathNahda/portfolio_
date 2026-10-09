@@ -25,16 +25,18 @@ export function ContactSection() {
                 Lets Connect
               </p>
               <h2 className="text-4xl md:text-5xl font-serif text-foreground">
-                Have an idea? Let&apos;s build it.
+                Let&apos;s build something useful.
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                I&apos;m open to full-time roles, freelance work, and collaborations. Send a message and I&apos;ll reply soon.
+                I&apos;m open to full-time roles, internships, freelance work, and collaborations across software engineering, AI/ML, and data science. Send a message and I&apos;ll reply soon.
               </p>
             </div>
 
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:ayishathnahda.9i@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ayishathnahda.9i@gmail.com&su=Hello%20Ayishath%20Nahda"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                 data-cursor-hover
               >
@@ -72,7 +74,7 @@ export function ContactSection() {
                   LeetCode
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1G4zrOPguIWExkwes67FdpiMi_G_qCKee/view?usp=sharing"
+                  href="https://docs.google.com/document/d/1_doglcF667pnevEYMylVhbNRxKayNs2i/edit?usp=sharing&ouid=115149068605547970552&rtpof=true&sd=true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full px-5 py-3 border border-border/70 bg-background/40 hover:bg-background/70 transition-colors text-sm font-medium"

@@ -199,4 +199,11 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Hide native cursor on desktop — custom cursor takes over */
+  @media (min-width: 768px) {
+    html, body {
+      cursor: none;
+    }
+  }
 }

@@ -22,22 +22,25 @@ export function AboutSection() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-serif text-foreground">
-            I build fast, scalable, and beautiful web experiences.
+            I build intelligent, scalable, and user-focused digital products.
           </h2>
 
           <p className="mt-5 text-muted-foreground leading-relaxed text-base md:text-lg">
-            I&apos;m Ayishath Nahda, a software engineer focused on crafting high-performance
-            interfaces with React/Next.js(MERN stack) and thoughtful motion. I care about clean architecture,
-            accessibility, and a polished user experience—from micro-interactions to full product flows.
+            I&apos;m Ayishath Nahda, a software engineer interested in building practical, intelligent,
+            and user-focused products across software engineering, AI/ML, and data science. I enjoy
+            solving real-world problems by combining strong programming fundamentals with modern technologies.
           </p>
 
           <p className="mt-5 text-muted-foreground leading-relaxed text-base md:text-lg">
-            I specialize in architecting scalable full-stack applications, AI-powered solutions,
-            and immersive web experiences using technologies like{" "}
+            My interests span full-stack development, AI-powered applications, machine learning, and
+            data-driven solutions. I work with technologies such as{" "}
+            <span className="text-foreground font-semibold">Python</span>,{" "}
+            <span className="text-foreground font-semibold">Java</span>,{" "}
+            <span className="text-foreground font-semibold">React</span>,{" "}
             <span className="text-foreground font-semibold">Next.js</span>,{" "}
-            <span className="text-foreground font-semibold">Node.js</span>, and{" "}
-            <span className="text-foreground font-semibold">React.js</span>, and{" "}
-            <span className="text-foreground font-semibold">MERN</span>.
+            <span className="text-foreground font-semibold">Node.js</span>,{" "}
+            <span className="text-foreground font-semibold">FastAPI</span>,{" "}
+            databases, and modern AI tools to turn ideas into useful products.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -63,7 +66,7 @@ export function AboutSection() {
   className="rounded-full px-6 py-6 bg-background/40 border border-border/70 backdrop-blur hover:bg-background/70"
 >
   <a
-    href="/AyishathNahda_Resume.pdf" // Path starts from the public folder root
+    href="https://docs.google.com/document/d/1_doglcF667pnevEYMylVhbNRxKayNs2i/edit?usp=sharing&ouid=115149068605547970552&rtpof=true&sd=true"
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center gap-2"
