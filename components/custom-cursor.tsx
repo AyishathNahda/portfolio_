@@ -102,7 +102,6 @@ export function CustomCursor() {
       {/* ── Large trailing expand blob (behind everything) ── */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9990] hidden md:block"
-        style={{ x: blobX, y: blobY }}
         animate={{
           width:  isExpanded ? 180 : 0,
           height: isExpanded ? 180 : 0,
